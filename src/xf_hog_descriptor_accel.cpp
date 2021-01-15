@@ -45,6 +45,7 @@ void hog_descriptor_accel(
 	// clang-format on
 	xf::cv::Array2xfMat<PTR_IN_WIDTH, IN_TYPE, OLDHEIGHT, OLDWIDTH, NPC>(img_in, in_mat);
 	xf::cv::resize<INTERPOLATION, IN_TYPE, OLDHEIGHT, OLDWIDTH, HEIGHT, WIDTH, NPC, MAXDOWNSCALE>(in_mat, out_mat);
+	//xf::cv::xfMat2Array<PTR_OUT_WIDTH, IN_TYPE, HEIGHT, WIDTH, NPC>(out_mat, img_out);
 
     // Run xfOpenCV kernel:
     xf::cv::HOGDescriptor<XF_WIN_HEIGHT, XF_WIN_WIDTH, XF_WIN_STRIDE, XF_BLOCK_HEIGHT, XF_BLOCK_WIDTH, XF_CELL_HEIGHT,
