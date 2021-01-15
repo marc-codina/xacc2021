@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ASCII"?>
+<openclProject:OpenCLProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:openclProject="http://www.xilinx.com/openclproject" name="hog" location="/home/centos/workspace/hog" platform="/home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm" platformUID="xilinx:aws-vu9p-f1:shell-v04261818:201920.2(custom)" systemProject="hog_system" sysConfig="config0_0" cpu="x86" cpuInstance="x86" os="Linux">
+  <configuration name="Emulation-SW" id="com.xilinx.accelerated.config.sw_emu.244679374">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="krnl_hog" traceMemory="FIFO:8K">
+        <kernels name="hog_descriptor_accel" sourceFile="src/xf_hog_descriptor_accel.cpp">
+          <computeUnits name="hog_descriptor_accel_1" slr="">
+            <args name="img_in" master="true" memory=""/>
+            <args name="desc_out" master="true" memory=""/>
+            <args name="rows" memory=""/>
+            <args name="cols" memory=""/>
+            <args name="_desc_size" memory=""/>
+          </computeUnits>
+          <args name="img_in" master="true"/>
+          <args name="desc_out" master="true"/>
+          <args name="rows"/>
+          <args name="cols"/>
+          <args name="_desc_size"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="krnl_hog" traceMemory="FIFO:8K">
+        <kernels name="hog_descriptor_accel" sourceFile="src/xf_hog_descriptor_accel.cpp">
+          <computeUnits name="hog_descriptor_accel_1" slr="">
+            <args name="img_in" master="true" memory=""/>
+            <args name="desc_out" master="true" memory=""/>
+            <args name="rows" memory=""/>
+            <args name="cols" memory=""/>
+            <args name="_desc_size" memory=""/>
+          </computeUnits>
+          <args name="img_in" master="true"/>
+          <args name="desc_out" master="true"/>
+          <args name="rows"/>
+          <args name="cols"/>
+          <args name="_desc_size"/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.accelerated.config.hw_emu.223125587" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
+      <binaryContainers name="krnl_hog" traceMemory="FIFO:8K">
+        <kernels name="hog_descriptor_accel" sourceFile="src/xf_hog_descriptor_accel.cpp">
+          <computeUnits name="hog_descriptor_accel_1" slr="">
+            <args name="img_in" master="true" memory=""/>
+            <args name="desc_out" master="true" memory=""/>
+            <args name="rows" memory=""/>
+            <args name="cols" memory=""/>
+            <args name="_desc_size" memory=""/>
+          </computeUnits>
+          <args name="img_in" master="true"/>
+          <args name="desc_out" master="true"/>
+          <args name="rows"/>
+          <args name="cols"/>
+          <args name="_desc_size"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
+      <binaryContainers name="krnl_hog" traceMemory="FIFO:8K">
+        <kernels name="hog_descriptor_accel" sourceFile="src/xf_hog_descriptor_accel.cpp">
+          <computeUnits name="hog_descriptor_accel_1" slr="">
+            <args name="img_in" master="true" memory=""/>
+            <args name="desc_out" master="true" memory=""/>
+            <args name="rows" memory=""/>
+            <args name="cols" memory=""/>
+            <args name="_desc_size" memory=""/>
+          </computeUnits>
+          <args name="img_in" master="true"/>
+          <args name="desc_out" master="true"/>
+          <args name="rows"/>
+          <args name="cols"/>
+          <args name="_desc_size"/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.accelerated.config.hw.127777361" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" target="hw">
+      <binaryContainers name="krnl_hog" traceMemory="FIFO:8K">
+        <kernels name="hog_descriptor_accel" sourceFile="src/xf_hog_descriptor_accel.cpp">
+          <computeUnits name="hog_descriptor_accel_1" slr="">
+            <args name="img_in" master="true" memory=""/>
+            <args name="desc_out" master="true" memory=""/>
+            <args name="rows" memory=""/>
+            <args name="cols" memory=""/>
+            <args name="_desc_size" memory=""/>
+          </computeUnits>
+          <args name="img_in" master="true"/>
+          <args name="desc_out" master="true"/>
+          <args name="rows"/>
+          <args name="cols"/>
+          <args name="_desc_size"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" target="hw">
+      <binaryContainers name="krnl_hog" traceMemory="FIFO:8K">
+        <kernels name="hog_descriptor_accel" sourceFile="src/xf_hog_descriptor_accel.cpp">
+          <computeUnits name="hog_descriptor_accel_1" slr="">
+            <args name="img_in" master="true" memory=""/>
+            <args name="desc_out" master="true" memory=""/>
+            <args name="rows" memory=""/>
+            <args name="cols" memory=""/>
+            <args name="_desc_size" memory=""/>
+          </computeUnits>
+          <args name="img_in" master="true"/>
+          <args name="desc_out" master="true"/>
+          <args name="rows"/>
+          <args name="cols"/>
+          <args name="_desc_size"/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+</openclProject:OpenCLProject>
